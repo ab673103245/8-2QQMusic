@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 注意 模块里面的colors.xml 中命名的颜色名不能和 app里面colors.xml 的颜色名一样，即使颜色一样。-->
+<resources>
+    <color name="green">#31c17d</color>
+
+
+</resources>

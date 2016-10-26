@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="org.sang.a8_1qqmusic">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:name=".App"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".showMusic.view.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <service android:name=".service.MusicService" />
+
+        <activity android:name=".localMusic.view.LocalMusicActivity" />
+        <activity android:name=".playMusic.view.PlayerActivity" />
+
+        <service android:name=".service.DownLoadService" />
+
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".searchMusic.view.SearchActivity"></activity>
+    </application>
+
+</manifest>
